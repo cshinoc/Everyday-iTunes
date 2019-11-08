@@ -15,7 +15,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let mainTabBarController = MainTabBarController()
+
+        let musicViewController = MusicViewController()
+        let bookViewController = BookViewController()
+        let movieViewController = MovieViewController()
+
+        musicViewController.title = "Music"
+        bookViewController.title = "Book"
+        movieViewController.title = "Movie"
+
+        mainTabBarController.viewControllers = [musicViewController, bookViewController, movieViewController]
+
+
+        window!.rootViewController = mainTabBarController
+        window!.makeKeyAndVisible()
+
         return true
     }
 

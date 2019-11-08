@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B576F93E237514BE00B92955 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F93D237514BE00B92955 /* CustomCell.swift */; };
 		B5DEFC962374A9CB00F08936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFC952374A9CB00F08936 /* AppDelegate.swift */; };
 		B5DEFC982374A9CB00F08936 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFC972374A9CB00F08936 /* ViewController.swift */; };
-		B5DEFC9B2374A9CB00F08936 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DEFC992374A9CB00F08936 /* Main.storyboard */; };
-		B5DEFC9D2374A9CE00F08936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DEFC9C2374A9CE00F08936 /* Assets.xcassets */; };
 		B5DEFCA02374A9CE00F08936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DEFC9E2374A9CE00F08936 /* LaunchScreen.storyboard */; };
+		B5DEFCA82374DEA900F08936 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCA72374DEA900F08936 /* MainTabBarController.swift */; };
+		B5DEFCAA2374E20100F08936 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCA92374E20100F08936 /* MusicViewController.swift */; };
+		B5DEFCAC2374E21D00F08936 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCAB2374E21D00F08936 /* BookViewController.swift */; };
+		B5DEFCAE2374E22F00F08936 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCAD2374E22F00F08936 /* MovieViewController.swift */; };
+		B5DEFCB22375012000F08936 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCB12375012000F08936 /* ListTableViewController.swift */; };
+		B5DEFCB423750B8100F08936 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DEFCB323750B8100F08936 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B576F93D237514BE00B92955 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		B5DEFC922374A9CB00F08936 /* Everyday iTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everyday iTunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DEFC952374A9CB00F08936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5DEFC972374A9CB00F08936 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5DEFC9A2374A9CB00F08936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B5DEFC9C2374A9CE00F08936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5DEFC9F2374A9CE00F08936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5DEFCA12374A9CE00F08936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5DEFCA72374DEA900F08936 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B5DEFCA92374E20100F08936 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		B5DEFCAB2374E21D00F08936 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		B5DEFCAD2374E22F00F08936 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		B5DEFCB12375012000F08936 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		B5DEFCB323750B8100F08936 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 			children = (
 				B5DEFC952374A9CB00F08936 /* AppDelegate.swift */,
 				B5DEFC972374A9CB00F08936 /* ViewController.swift */,
-				B5DEFC992374A9CB00F08936 /* Main.storyboard */,
-				B5DEFC9C2374A9CE00F08936 /* Assets.xcassets */,
 				B5DEFC9E2374A9CE00F08936 /* LaunchScreen.storyboard */,
 				B5DEFCA12374A9CE00F08936 /* Info.plist */,
+				B5DEFCA72374DEA900F08936 /* MainTabBarController.swift */,
+				B5DEFCA92374E20100F08936 /* MusicViewController.swift */,
+				B5DEFCAB2374E21D00F08936 /* BookViewController.swift */,
+				B5DEFCAD2374E22F00F08936 /* MovieViewController.swift */,
+				B5DEFCB12375012000F08936 /* ListTableViewController.swift */,
+				B5DEFCB323750B8100F08936 /* Images.xcassets */,
+				B576F93D237514BE00B92955 /* CustomCell.swift */,
 			);
 			path = "Everyday iTunes";
 			sourceTree = "<group>";
@@ -123,8 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5DEFCA02374A9CE00F08936 /* LaunchScreen.storyboard in Resources */,
-				B5DEFC9D2374A9CE00F08936 /* Assets.xcassets in Resources */,
-				B5DEFC9B2374A9CB00F08936 /* Main.storyboard in Resources */,
+				B5DEFCB423750B8100F08936 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +149,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DEFCAA2374E20100F08936 /* MusicViewController.swift in Sources */,
 				B5DEFC982374A9CB00F08936 /* ViewController.swift in Sources */,
+				B5DEFCAC2374E21D00F08936 /* BookViewController.swift in Sources */,
 				B5DEFC962374A9CB00F08936 /* AppDelegate.swift in Sources */,
+				B5DEFCB22375012000F08936 /* ListTableViewController.swift in Sources */,
+				B5DEFCA82374DEA900F08936 /* MainTabBarController.swift in Sources */,
+				B576F93E237514BE00B92955 /* CustomCell.swift in Sources */,
+				B5DEFCAE2374E22F00F08936 /* MovieViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5DEFC992374A9CB00F08936 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5DEFC9A2374A9CB00F08936 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5DEFC9E2374A9CE00F08936 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
