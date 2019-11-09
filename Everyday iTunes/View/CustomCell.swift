@@ -23,7 +23,7 @@ class CustomCell: UITableViewCell {
     var cellImagView : UIImageView = {
         var imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -35,8 +35,8 @@ class CustomCell: UITableViewCell {
         cellImagView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
         cellImagView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
         cellImagView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        cellImagView.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        cellImagView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        cellImagView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+//        cellImagView.heightAnchor.constraint(equalToConstant: 200).isActive = true
 
         InfoView.leftAnchor.constraint(equalTo: self.cellImagView.rightAnchor).isActive = true
         InfoView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
