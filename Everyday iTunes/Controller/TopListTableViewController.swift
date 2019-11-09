@@ -13,6 +13,7 @@ class TopListTableViewController: UITableViewController {
 
     var urlString: String?
 
+    // To support parse different json url
     init(urlString: String?) {
         self.urlString = urlString
         super.init(nibName: nil, bundle: nil)
@@ -25,7 +26,7 @@ class TopListTableViewController: UITableViewController {
     var task: URLSessionDownloadTask!
     var session: URLSession!
     var cache: NSCache<AnyObject, AnyObject>!
-    var refreshCont: UIRefreshControl!
+    var refreshCont: UIRefreshControl! // Can refresh the table
     var tableData: [AnyObject]!
 
     override func viewDidLoad() {
@@ -34,12 +35,14 @@ class TopListTableViewController: UITableViewController {
         session = URLSession.shared
         task = URLSessionDownloadTask()
 
+        // Load the content first
         updateTableView()
 
         self.refreshCont = UIRefreshControl()
-        self.refreshCont.addTarget(self, action: #selector(BookListTableViewController.updateTableView), for: .valueChanged)
+        self.refreshCont.addTarget(self, action: #selector(TopListTableViewController.updateTableView), for: .valueChanged)
         self.refreshControl = self.refreshCont
 
+        // Collected from json
         tableData = []
 
         self.cache = NSCache()
@@ -64,14 +67,18 @@ class TopListTableViewController: UITableViewController {
         cell.detailTextLabel!.text = dict["artistName"] as? String
         cell.detailTextLabel!.textColor = UIColor.gray
 
+        // show the placeholder image as default if the url image hasn't been loaded
         cell.imageView?.image = UIImage(named: "placeholder")
         cell.imageView?.contentMode = .scaleAspectFit
         cell.imageView?.layer.cornerRadius = 5
         cell.imageView?.clipsToBounds = true
 
         if (self.cache.object(forKey: indexPath.row as AnyObject) != nil) {
+
             print("No need to download")
+            // Use cached image directly
             cell.imageView?.image = self.cache.object(forKey: indexPath.row as AnyObject) as? UIImage
+
         } else {
             let artworkURL = dict["artworkUrl100"] as! String
 
@@ -79,6 +86,7 @@ class TopListTableViewController: UITableViewController {
 
             task = session.downloadTask(with: imageURL, completionHandler: { (address: URL?, response: URLResponse?, error: Error?) -> Void in
 
+                // download image
                 if let data = try? Data(contentsOf: imageURL) {
                     DispatchQueue.main.async (execute: { () -> Void in
 

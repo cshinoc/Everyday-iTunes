@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B576F9452376CBD400B92955 /* BookListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F9442376CBD400B92955 /* BookListTableViewController.swift */; };
 		B576F9492377388200B92955 /* TopListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B576F9482377388200B92955 /* TopListTableViewController.swift */; };
 		B5DEFC962374A9CB00F08936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFC952374A9CB00F08936 /* AppDelegate.swift */; };
 		B5DEFCA02374A9CE00F08936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DEFC9E2374A9CE00F08936 /* LaunchScreen.storyboard */; };
@@ -15,12 +14,10 @@
 		B5DEFCAA2374E20100F08936 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCA92374E20100F08936 /* MusicViewController.swift */; };
 		B5DEFCAC2374E21D00F08936 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCAB2374E21D00F08936 /* BookViewController.swift */; };
 		B5DEFCAE2374E22F00F08936 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCAD2374E22F00F08936 /* PodcastViewController.swift */; };
-		B5DEFCB22375012000F08936 /* MusicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCB12375012000F08936 /* MusicListTableViewController.swift */; };
 		B5DEFCB423750B8100F08936 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DEFCB323750B8100F08936 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B576F9442376CBD400B92955 /* BookListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListTableViewController.swift; sourceTree = "<group>"; };
 		B576F9482377388200B92955 /* TopListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopListTableViewController.swift; sourceTree = "<group>"; };
 		B5DEFC922374A9CB00F08936 /* Everyday iTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Everyday iTunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DEFC952374A9CB00F08936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +27,6 @@
 		B5DEFCA92374E20100F08936 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		B5DEFCAB2374E21D00F08936 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		B5DEFCAD2374E22F00F08936 /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
-		B5DEFCB12375012000F08936 /* MusicListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewController.swift; sourceTree = "<group>"; };
 		B5DEFCB323750B8100F08936 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,8 +48,6 @@
 				B5DEFCAB2374E21D00F08936 /* BookViewController.swift */,
 				B5DEFCA92374E20100F08936 /* MusicViewController.swift */,
 				B5DEFCA72374DEA900F08936 /* MainTabBarController.swift */,
-				B5DEFCB12375012000F08936 /* MusicListTableViewController.swift */,
-				B576F9442376CBD400B92955 /* BookListTableViewController.swift */,
 				B576F9482377388200B92955 /* TopListTableViewController.swift */,
 			);
 			path = Controller;
@@ -158,10 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5DEFCAA2374E20100F08936 /* MusicViewController.swift in Sources */,
-				B576F9452376CBD400B92955 /* BookListTableViewController.swift in Sources */,
 				B5DEFCAC2374E21D00F08936 /* BookViewController.swift in Sources */,
 				B5DEFC962374A9CB00F08936 /* AppDelegate.swift in Sources */,
-				B5DEFCB22375012000F08936 /* MusicListTableViewController.swift in Sources */,
 				B5DEFCA82374DEA900F08936 /* MainTabBarController.swift in Sources */,
 				B5DEFCAE2374E22F00F08936 /* PodcastViewController.swift in Sources */,
 				B576F9492377388200B92955 /* TopListTableViewController.swift in Sources */,
