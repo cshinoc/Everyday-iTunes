@@ -1,14 +1,26 @@
 //
-//  CellData.swift
+//  TopListTableViewController.swift
 //  Everyday iTunes
 //
-//  Created by 白鳃 Cc on 11/7/19.
+//  Created by 白鳃 Cc on 11/9/19.
 //  Copyright © 2019 白鳃 Cc. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class MusicListTableViewController: UITableViewController {
+class TopListTableViewController: UITableViewController {
+
+    var urlString: String?
+
+    init(urlString: String?) {
+        self.urlString = urlString
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     var task: URLSessionDownloadTask!
     var session: URLSession!
@@ -25,7 +37,7 @@ class MusicListTableViewController: UITableViewController {
         updateTableView()
 
         self.refreshCont = UIRefreshControl()
-        self.refreshCont.addTarget(self, action: #selector(MusicListTableViewController.updateTableView), for: .valueChanged)
+        self.refreshCont.addTarget(self, action: #selector(BookListTableViewController.updateTableView), for: .valueChanged)
         self.refreshControl = self.refreshCont
 
         tableData = []
@@ -36,7 +48,6 @@ class MusicListTableViewController: UITableViewController {
 
         self.tableView.rowHeight = UITableView.automaticDimension
 
-        self.tableView.estimatedRowHeight = 50
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,7 +55,7 @@ class MusicListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "custom")
 
         let dict = tableData[indexPath.row] as! [String: AnyObject]
@@ -54,9 +65,9 @@ class MusicListTableViewController: UITableViewController {
         cell.detailTextLabel!.textColor = UIColor.gray
 
         cell.imageView?.image = UIImage(named: "placeholder")
-        cell.imageView?.contentMode = .scaleAspectFill
-
-//        cell.heightAnchor.constraint(equalToConstant: 80).isActive = true
+        cell.imageView?.contentMode = .scaleAspectFit
+        cell.imageView?.layer.cornerRadius = 5
+        cell.imageView?.clipsToBounds = true
 
         if (self.cache.object(forKey: indexPath.row as AnyObject) != nil) {
             print("No need to download")
@@ -91,7 +102,7 @@ class MusicListTableViewController: UITableViewController {
     }
 
     @objc func updateTableView() {
-        let songURL: URL! = URL(string: "https://rss.itunes.apple.com/api/v1/us/apple-music/top-songs/all/50/explicit.json")
+        let songURL: URL! = URL(string: self.urlString!)
 
         task = session.downloadTask(with: songURL, completionHandler: { (address: URL?, response: URLResponse?, error: Error?) -> Void in
 
@@ -117,4 +128,5 @@ class MusicListTableViewController: UITableViewController {
 
         task.resume()
     }
+    
 }

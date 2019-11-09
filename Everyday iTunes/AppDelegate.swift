@@ -21,13 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let musicViewController = MusicViewController()
         let bookViewController = BookViewController()
-        let movieViewController = MovieViewController()
+        let podcastViewController = PodcastViewController()
 
-        musicViewController.title = "Music"
-        bookViewController.title = "Book"
-        movieViewController.title = "Movie"
+        musicViewController.title = "Musics"
+        bookViewController.title = "Books"
+        podcastViewController.title = "Podcasts"
 
-        mainTabBarController.viewControllers = [musicViewController, bookViewController, movieViewController]
+        mainTabBarController.viewControllers = [musicViewController, bookViewController, podcastViewController]
 
         window!.rootViewController = mainTabBarController
         window!.makeKeyAndVisible()

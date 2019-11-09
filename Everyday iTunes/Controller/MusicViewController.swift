@@ -13,8 +13,8 @@ class MusicViewController: UIViewController {
 
     let topLabel : UILabel = {
         let label = UILabel()
-        label.text = "Top 50 Songs in Apple Music"
-        label.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 30.0)
+        label.text = "Top 50 Songs"
+        label.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 40.0)
         label.textAlignment = NSTextAlignment.left
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -32,7 +32,8 @@ class MusicViewController: UIViewController {
         topLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 25).isActive = true
 
         // Create child VC
-        let musicList = MusicListTableViewController()
+        let urlString = "https://rss.itunes.apple.com/api/v1/us/apple-music/top-songs/all/50/explicit.json"
+        let musicList = TopListTableViewController(urlString: urlString)
 
         // Set child VC
         self.addChild(musicList)
@@ -48,7 +49,8 @@ class MusicViewController: UIViewController {
         musicList.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         musicList.view.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         musicList.view.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true
-        musicList.view.heightAnchor.constraint(equalToConstant: 800).isActive = true
+        musicList.view.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+
     }
 
     
