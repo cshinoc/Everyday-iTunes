@@ -13,8 +13,8 @@ class MusicViewController: UIViewController {
 
     let topLabel : UILabel = {
         let label = UILabel()
-        label.text = "Top 1 Cute Cat"
-        label.font = UIFont(name: "GillSans-Light", size: 30.0)
+        label.text = "Top 50 Songs in Apple Music"
+        label.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 30.0)
         label.textAlignment = NSTextAlignment.left
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -28,11 +28,11 @@ class MusicViewController: UIViewController {
 
         self.view.addSubview(topLabel)
 
-        topLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive = true
-        topLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 50).isActive = true
+        topLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 80).isActive = true
+        topLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 25).isActive = true
 
         // Create child VC
-        let musicList = ListTableViewController()
+        let musicList = MusicListTableViewController()
 
         // Set child VC
         self.addChild(musicList)
@@ -44,7 +44,7 @@ class MusicViewController: UIViewController {
         musicList.didMove(toParent: self)
 
         musicList.view.translatesAutoresizingMaskIntoConstraints = false
-        musicList.view.topAnchor.constraint(equalTo: self.topLabel.bottomAnchor, constant: 100).isActive = true
+        musicList.view.topAnchor.constraint(equalTo: self.topLabel.bottomAnchor, constant: 60).isActive = true
         musicList.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         musicList.view.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         musicList.view.widthAnchor.constraint(equalTo: self.view.widthAnchor).isActive = true

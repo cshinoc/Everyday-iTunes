@@ -16,7 +16,7 @@
 		B5DEFCAA2374E20100F08936 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCA92374E20100F08936 /* MusicViewController.swift */; };
 		B5DEFCAC2374E21D00F08936 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCAB2374E21D00F08936 /* BookViewController.swift */; };
 		B5DEFCAE2374E22F00F08936 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCAD2374E22F00F08936 /* MovieViewController.swift */; };
-		B5DEFCB22375012000F08936 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCB12375012000F08936 /* ListTableViewController.swift */; };
+		B5DEFCB22375012000F08936 /* MusicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DEFCB12375012000F08936 /* MusicListTableViewController.swift */; };
 		B5DEFCB423750B8100F08936 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DEFCB323750B8100F08936 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		B5DEFCA92374E20100F08936 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		B5DEFCAB2374E21D00F08936 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		B5DEFCAD2374E22F00F08936 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
-		B5DEFCB12375012000F08936 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		B5DEFCB12375012000F08936 /* MusicListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewController.swift; sourceTree = "<group>"; };
 		B5DEFCB323750B8100F08936 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 		B576F94223763EE300B92955 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B5DEFCB12375012000F08936 /* ListTableViewController.swift */,
+				B5DEFCB12375012000F08936 /* MusicListTableViewController.swift */,
 				B5DEFCAD2374E22F00F08936 /* MovieViewController.swift */,
 				B5DEFCAB2374E21D00F08936 /* BookViewController.swift */,
 				B5DEFCA92374E20100F08936 /* MusicViewController.swift */,
@@ -181,7 +181,7 @@
 				B576F94023763E8300B92955 /* MusicManager.swift in Sources */,
 				B5DEFCAC2374E21D00F08936 /* BookViewController.swift in Sources */,
 				B5DEFC962374A9CB00F08936 /* AppDelegate.swift in Sources */,
-				B5DEFCB22375012000F08936 /* ListTableViewController.swift in Sources */,
+				B5DEFCB22375012000F08936 /* MusicListTableViewController.swift in Sources */,
 				B5DEFCA82374DEA900F08936 /* MainTabBarController.swift in Sources */,
 				B576F93E237514BE00B92955 /* CustomCell.swift in Sources */,
 				B5DEFCAE2374E22F00F08936 /* MovieViewController.swift in Sources */,

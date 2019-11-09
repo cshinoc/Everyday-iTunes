@@ -29,7 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         mainTabBarController.viewControllers = [musicViewController, bookViewController, movieViewController]
 
-
         window!.rootViewController = mainTabBarController
         window!.makeKeyAndVisible()
 
