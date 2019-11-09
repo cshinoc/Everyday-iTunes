@@ -12,7 +12,7 @@ import UIKit
 class BookViewController: UIViewController {
     let topLabel : UILabel = {
         let label = UILabel()
-        label.text = "Top 50 Paid Books"
+        label.text = "Top 50 Audiobooks"
         label.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 40.0)
         label.textAlignment = NSTextAlignment.left
         label.numberOfLines = 1

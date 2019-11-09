@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let podcastViewController = PodcastViewController()
 
         musicViewController.title = "Musics"
-        bookViewController.title = "Books"
+        bookViewController.title = "Audiobooks"
         podcastViewController.title = "Podcasts"
 
         mainTabBarController.viewControllers = [musicViewController, bookViewController, podcastViewController]
