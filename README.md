@@ -7,6 +7,8 @@ Users can tap the content type on the tapbar. Then each page will display a list
 image, a name and an artist name. All the components are developed programmatically. No use of storyboard or interface builder
 and no use of 3rd party frameworks and libraries.
 
+<img src="/screenshot1.png" width="20%">      <img src="/screenshot2.png" width="20%">      <img src="/screenshot3.png" width="20%">
+
 ## Functionalities
 
 ### Basic features
