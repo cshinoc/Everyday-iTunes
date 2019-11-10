@@ -75,7 +75,7 @@ class TopListTableViewController: UITableViewController {
 
         if (self.cache.object(forKey: indexPath.row as AnyObject) != nil) {
 
-            print("No need to download")
+            print("No need to download \(indexPath.row)")
             // Use cached image directly
             cell.imageView?.image = self.cache.object(forKey: indexPath.row as AnyObject) as? UIImage
 
@@ -110,9 +110,9 @@ class TopListTableViewController: UITableViewController {
     }
 
     @objc func updateTableView() {
-        let songURL: URL! = URL(string: self.urlString!)
+        let url: URL! = URL(string: self.urlString!)
 
-        task = session.downloadTask(with: songURL, completionHandler: { (address: URL?, response: URLResponse?, error: Error?) -> Void in
+        task = session.downloadTask(with: url, completionHandler: { (address: URL?, response: URLResponse?, error: Error?) -> Void in
 
             if address != nil {
                 let data:Data! = try? Data(contentsOf: address!)
